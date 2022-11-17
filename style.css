@@ -1,0 +1,349 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* color */
+
+:root {
+
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+/* font-style for Heading & body*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Poppins:wght@200;400;600&family=Raleway&family=Red+Hat+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+
+    font-size: 16px;
+    background-image: url(/huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: var(--Violet);
+}
+
+.flex-container {
+
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+
+}
+
+header {
+    margin-bottom: 3rem;
+}
+
+header img {
+
+    width: 50%;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.text-container {
+
+    margin-top: 2rem;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+
+    margin-top: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    /* body */
+    margin-top: 1rem;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: center;
+    margin-left: 1rem;
+}
+
+input {
+    margin-top: 1.5rem;
+    border-radius: 30px;
+    padding: 0.6rem;
+    border-style: none;
+    width: 60%;
+}
+
+input:hover{
+
+    background-color:var(--Soft-Magenta);
+    cursor: pointer;
+}
+
+::placeholder {
+
+    text-align: center;
+    color: var(--Violet);
+}
+
+input:focus::placeholder {
+    color: white;
+  }
+
+footer {
+
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+footer img {
+
+    margin: 0.2rem;
+    width: 2rem;
+}
+
+
+/* Media Query for Tablet or Medium Screen  */
+
+@media(min-width:40em) {
+
+
+    .flex-container {
+        margin: 4rem;
+    }
+
+    header img {
+
+        width: 40%;
+    }
+
+    .text-container {
+
+        margin-left: 5rem;
+        margin-right: 5rem;
+
+    }
+
+    h1 {
+        font-size: 2em;
+        font-weight: 600;
+    }
+
+    h2 {
+
+        margin-top: 0.8rem;
+        font-size: 2em;
+        font-weight: 600;
+    }
+
+    p {
+
+        /* body */
+        margin-top: 2rem;
+        text-align: center;
+        margin-right: 2rem;
+        margin-left: 1.5rem;
+
+    }
+
+    input {
+        margin-top: 3.5rem;
+        padding: 1rem;
+        border-style: none;
+        width: 70%;
+    }
+
+    footer {
+
+        margin-top: 6rem;
+        margin-bottom: 1rem;
+    }
+
+    footer img {
+
+        margin: 0.5rem;
+        width: 3.5rem;
+    }
+}
+
+/* Media Query for larger screen  */
+
+@media(min-width:60em) {
+
+    .flex-container {
+        flex-direction: row;
+        height: 100vh;
+        margin: 0;
+
+
+    }
+
+    /* Image Container */
+    .image-container {
+        width: 60%;
+        position: relative;
+    }
+
+    header img {
+
+        width: 20%;
+        margin-top: 5em;
+        margin-left: 4rem;
+
+    }
+
+    .hero-image {
+        width: 80%;
+        position: absolute;
+        left: 60px;
+     
+    }
+
+    /* Text-container */
+    .text-container {
+        width: 40%;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        
+    }
+
+    h1 {
+
+        margin-top: 10rem;
+        text-align: start;
+
+    }
+
+    h2 {
+        text-align: start;
+
+    }
+
+    p {
+        text-align: start;
+        margin-right: 1rem;
+        margin-left: 0rem;
+        
+    }
+
+    input {
+
+        width: 40%;
+        margin-left: 0rem;
+        margin-top: 1.5rem;
+    }
+
+    footer {
+
+        position: absolute;
+        bottom: 1px;
+        right: 20px;
+
+    }
+
+    footer img {
+
+        margin: 0.05rem;
+        width: 2.5rem;
+    }
+
+
+
+}
+
+/* Media  Query  for very Larger screen  */
+@media(min-width:90em) {
+
+
+    body {
+
+
+        background-image: url(/huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg);
+
+    }
+
+
+    .flex-container {
+        flex-direction: row;
+        height: 100vh;
+        margin: 0;
+
+
+    }
+
+    /* Image Container */
+    .image-container {
+        width: 60%;
+        position: relative;
+    }
+
+    header img {
+
+        width: 20%;
+        margin-top: 3rem;
+        margin-left: 6rem;
+    }
+
+    .hero-image {
+        width: 80%;
+        position: absolute;
+        left: 120px;
+    }
+
+    /* Text-container */
+    .text-container {
+        width: 40%;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    h1 {
+
+        margin-top: 10rem;
+        text-align: start;
+        margin-left: 1.5rem;
+    }
+
+    h2 {
+        text-align: start;
+        margin-left: 1.5rem;
+    }
+
+    p {
+        text-align: start;
+        margin-right: 9rem;
+    }
+
+    input {
+
+        width: 40%;
+        margin-left: 1.5rem;
+    }
+
+    footer {
+
+        position: absolute;
+        bottom: 10px;
+        right: 30px;
+
+    }
+
+
+}
