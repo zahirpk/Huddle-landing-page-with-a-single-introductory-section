@@ -19,7 +19,7 @@
 body {
 
     font-size: 16px;
-    background-image: url(/huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg);
+    background-image: url(images/bg-mobile.svg);
     background-repeat: no-repeat;
     background-position: top center;
     background-color: var(--Violet);
@@ -272,7 +272,7 @@ footer img {
     body {
 
 
-        background-image: url(/huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg);
+        background-image: url(images/bg-desktop.svg);
 
     }
 
